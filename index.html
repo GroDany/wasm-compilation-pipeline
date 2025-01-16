@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Basic WASM compilation pipeline</title>
+	<style>
+		body {
+			margin: 0;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: grey;
+		}
+		button {
+			padding: 10px 20px;
+			font-size: 16px;
+			cursor: pointer;
+		}
+	</style>
+	<script src="./bin/test.js"></script>
+	<script>
+		add = Module.cwrap('add', 'number', ['number', 'number']);
+		function testMethod() {
+			console.log(Module);
+			console.log(Module.ccall);
+			console.log(Module.cwrap);
+			alert(`C says: 10 + 15 = ${add(10, 15)}`);
+		}
+	</script>
+</head>
+<body>
+	<button onclick="testMethod()">Click me</button>
+</body>
+</html>
