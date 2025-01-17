@@ -1,6 +1,6 @@
 # wasm-compilation-pipeline
 
-This is a basic boilerplate project for C library compilation to wasm using emscripten
+This is a basic boilerplate project for C/C++ library compilation to wasm using emscripten
 
 # How to use
 
