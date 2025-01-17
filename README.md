@@ -21,4 +21,4 @@ In the `Makefile` you can edit `CFLAGS` (`CFLAGS += <valid emscripten options>`)
 
 # Roadmap
 - [ ] Adding different tags to link commonly used libraries
-- [ ] Generating the module boilerplate ourselves so we can use other compiler than emscripten
+- [ ] Generating the module boilerplate ourselves so we can use other compilers than emscripten
