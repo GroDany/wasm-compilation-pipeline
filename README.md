@@ -6,6 +6,14 @@ This is a basic boilerplate project for C/C++ library compilation to wasm using 
 
 First you need to install `make` and `emscripten`
 
+Then you need to download the `docking` version of `imgui`.
+At the root of the project:
+```
+    $ git clone -b docking git@github.com:ocornut/imgui.git
+```
+
+This should create the `imgui` folder at the root of your project
+
 Assuming you have emscripten in your PATH, at the root of the project just run:
 ```
     $ make
